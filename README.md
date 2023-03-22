@@ -15,7 +15,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Covid 19 Statistics\] ](#-Covid-19-Statistics-)
+- [📖 \[Countries\] ](#-Countries-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -36,10 +36,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Covid 19 Statistics] <a name="about-project"></a>
+# 📖 [Countries] <a name="about-project"></a>
 
 
-**[Covid 19 Statistics]** is a Single Page JavaScript project, using React and ES6 features, and modules..
+**[Countries]** is a Single Page JavaScript project, using React and ES6 features, and modules..
 
 ## 🛠 Built With <a name="built-with"></a>
 
