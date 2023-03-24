@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
 
 const Navbar = () => (
   <div>
     <Link to="/">
-      <h1>Back</h1>
+      <FaHome />
     </Link>
     <Outlet />
   </div>
