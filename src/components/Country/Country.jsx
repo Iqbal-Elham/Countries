@@ -7,7 +7,7 @@ import './Country.scss';
 
 const Country = () => {
   const {
-    countriesData, isLoading, success, region,
+    countriesData, isLoading, region,
   } = useSelector(
     (store) => store.country,
   );
@@ -16,7 +16,7 @@ const Country = () => {
   useEffect(() => {
     if (!countriesData.length) dispatch(getAllCountries());
     if (region) dispatch(getRegion(region));
-  }, [dispatch, countriesData.length, success, region]);
+  }, [dispatch, countriesData.length, region]);
 
   return (
     <div className="country__list">

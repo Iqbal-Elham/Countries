@@ -36,9 +36,6 @@ const initialState = {
   countriesData: [],
   countrySearch: [],
   region: '',
-  error: false,
-  success: false,
-  message: '',
 };
 
 export const countriesSlice = createSlice({
