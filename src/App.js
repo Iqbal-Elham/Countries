@@ -1,17 +1,16 @@
 import {
-  BrowserRouter, Routes, Route, Outlet,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
+import Details from './routes/Details';
 import Homepage from './routes/Homepage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Outlet />}>
-          <Route index element={<Homepage />} />
-          <Route path="/detail" element={<h1>Detail</h1>} />
-          <Route path="*" element={<div>If page not found it goes here</div>} />
-        </Route>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/:code" element={<Details />} />
+        <Route path="*" element={<div>If page not found it goes here</div>} />
       </Routes>
     </BrowserRouter>
   );

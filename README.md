@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <img src="./assets/images/my-logo.png" alt="logo" width="140"  height="auto" style='border-radius:30%'/>
+  <img src="./assets/images/my-logo.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Full Stack Developer</b></h3>
@@ -39,7 +39,7 @@
 # 📖 [Countries] <a name="about-project"></a>
 
 
-**[Countries]** is a Single Page JavaScript project, using React and ES6 features, and modules..
+**[Countries]** is a Single Page JavaScript project, using React and ES6 features which fetch the countries data from [Rest Countries](https://restcountries.com/v3.1/all) API, and by clicking on country flag, we can see all the details about the country. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,6 +51,7 @@
     <li><a href="https://reactjs.org/">CSS</a></li>
     <li><a href="https://reactjs.org/">JavaScript</a></li>
     <li><a href="https://reactjs.org/">React</a></li>
+    <li><a href="https://reactjs.org/">Redux</a></li>
   </ul>
 
 
@@ -69,7 +70,13 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Coming Soon]()
+- [Link to Live Demo](https://countries-app-btpi.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Live Video <a name="live-video"></a>
+
+[Link to Video](https://www.loom.com/share/8644dc18862b4eaeb30e4110269626c6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,9 +98,9 @@ and follow these steps.
 Clone this repository to your desired folder:
 
 1. Download the **Zip** file or clone the repo with:
-```bash git clone https://github.com/Iqbal-Elham/Math-Magician.git ``` 
+```bash git clone https://github.com/Iqbal-Elham/Countries.git ``` 
 2. To access cloned directory run: 
-```bash cd math-magician ``` 
+```bash cd Countries ``` 
 3. Open it with the live server 
 
 ### Install
@@ -128,15 +135,22 @@ Enter the follow code to run the project locally:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 
 👤 **Iqbal Elham**
 
 - GitHub: [@iqbal-elham](https://github.com/Iqbal-Elham)
-- linkedIn: [@iqbal-elham](https://www.linkedin.com/in/iqbal-elham-8830aa19a/)
+- linkedIn: [@iqbal-elham](https://www.linkedin.com/in/iqbal-elham)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+- [ ] **Making Improvment**
+- [ ] **Deployment**
 
 <!-- CONTRIBUTING -->
 
@@ -160,7 +174,8 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-A great thanks to Microverse.
+- A great thanks to Microverse.
+- Original design idea by [Nelson Sakwa on Behance.](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29) Under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

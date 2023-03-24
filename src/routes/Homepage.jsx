@@ -1,9 +1,14 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import Home from "../components/Home";
+import React from 'react';
+import Country from '../components/Country/Country';
+import Filter from '../components/Filter/Filter';
+import Navbar from '../components/Navbar/Navbar';
 
-const Homepage = () => {
-    <></>
-};
+const Homepage = () => (
+  <>
+    <Navbar title="Countries" back={false} />
+    <Filter />
+    <Country />
+  </>
+);
 
 export default Homepage;
