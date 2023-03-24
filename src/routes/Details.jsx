@@ -17,7 +17,7 @@ const Details = () => {
   }, [dispatch, code]);
   return (
     <div>
-      <Navbar title="Details" />
+      <Navbar title="Details" back />
       {countrySearch.length > 0 ? (
         <div className="detail__container">
           <div className="detail__header">

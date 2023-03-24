@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar/Navbar';
 
 const Homepage = () => (
   <>
-    <Navbar title="Countries" />
+    <Navbar title="Countries" back={false} />
     <Filter />
     <Country />
   </>
