@@ -1,28 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getAllCountries } from '../../redux/countriesSlice/countriesSlice';
+import { getAllCountries, getRegion } from '../../redux/countriesSlice/countriesSlice';
 
 const Country = () => {
-  const { countriesData, isLoading, success } = useSelector(
+  const {
+    countriesData, isLoading, success, region,
+  } = useSelector(
     (store) => store.country,
   );
   const dispatch = useDispatch();
 
-  const [countryData, setCountryData] = useState([]);
+  // const [countryData, setCountryData] = useState([]);
 
   useEffect(() => {
-    dispatch(getAllCountries());
-    if (success) setCountryData(countriesData);
-  }, [dispatch, success]);
+    if (!countriesData.length) dispatch(getAllCountries());
+    // if (success) setCountryData(countriesData);
+    if (region) {
+      dispatch(getRegion(region));
+    }
+  }, [dispatch, success, region]);
 
   return (
     <div>
       {isLoading ? (
         <h1>Loading...</h1>
       ) : (
-        countryData.length > 0
-        && countryData.map((item) => (
+        countriesData.length > 0
+        && countriesData.map((item) => (
           <Link to={`/${item.cioc}`} key={item.name.common}>
             <img src={item.flags.png} alt={item.flags.alt} />
             <div>
