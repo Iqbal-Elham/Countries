@@ -2,7 +2,7 @@
   display: grid;
   color: var(--white-color);
   grid-template-columns: 1fr 1fr;
-  
+
   .country__container {
     position: relative;
     padding: 0.6rem;
@@ -22,9 +22,8 @@
       gap: 0.5rem;
       color: #ebebeb;
     }
-    
   }
-  
+
   .country__arrow {
     font-size: 22px;
     display: flex;
@@ -32,6 +31,7 @@
     top: 5px;
     right: 5px;
   }
+
   .country__container:nth-child(3n+1) {
     background-color: var(--secondary-color);
   }

@@ -70,7 +70,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- Coming Soon .....
+- [Link to Live Demo](https://countries-app-btpi.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
