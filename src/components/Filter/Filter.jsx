@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { setRegion } from '../../redux/countriesSlice/countriesSlice';
+import worldMap from '../assets/img/worldMap.png';
+import './Filter.scss';
 
 const Filter = () => {
   const [filter, setFilter] = useState('');
@@ -19,14 +21,18 @@ const Filter = () => {
   };
 
   return (
-    <div>
-      <select name="selected" ref={selectRef} onChange={setRefState}>
-        <option value="Asia">Asia</option>
-        <option value="Oceania">Oceania </option>
-        <option value="Europe"> Europe </option>
-        <option value="Americas"> Americas</option>
-        <option value="Africa"> Africa</option>
-      </select>
+    <div className="filter__container">
+      <img src={worldMap} alt="World map" height="150" width="250" />
+      <div>
+        <select name="selected" ref={selectRef} onChange={setRefState} className="filter__select">
+          <option value="" disabled selected hidden>Select Region</option>
+          <option value="Asia">Asia</option>
+          <option value="Oceania">Oceania </option>
+          <option value="Europe"> Europe </option>
+          <option value="Americas"> Americas</option>
+          <option value="Africa"> Africa</option>
+        </select>
+      </div>
     </div>
   );
 };
