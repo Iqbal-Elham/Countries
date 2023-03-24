@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <img src="./assets/images/my-logo.jpg" alt="logo" width="140"  height="auto" />
+  <img src="./assets/images/my-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Full Stack Developer</b></h3>
