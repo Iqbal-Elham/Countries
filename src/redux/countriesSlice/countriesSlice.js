@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getAllCountries = createAsyncThunk('getCountries/countries', async (_, thunkAPI) => {
   try {
-    const response = await axios('https://restcountries.com/v3.1/all');
+    const response = await axios.get('https://restcountries.com/v3.1/all');
     return response.data;
   } catch (error) {
     const message = (error.response && error.response.data) || error.message;
@@ -13,7 +13,7 @@ export const getAllCountries = createAsyncThunk('getCountries/countries', async 
 
 export const getCountry = createAsyncThunk('getCountry/countries', async (code, thunkAPI) => {
   try {
-    const response = await axios(`https://restcountries.com/v3.1/alpha/${code}`);
+    const response = await axios.get(`https://restcountries.com/v3.1/alpha/${code}`);
     return response.data;
   } catch (error) {
     const message = (error.response && error.response.data) || error.message;
@@ -23,7 +23,7 @@ export const getCountry = createAsyncThunk('getCountry/countries', async (code, 
 
 export const getRegion = createAsyncThunk('getRegion/countries', async (region, thunkAPI) => {
   try {
-    const response = await axios(`https://restcountries.com/v3.1/region/${region}`);
+    const response = await axios.get(`https://restcountries.com/v3.1/region/${region}`);
     return response.data;
   } catch (error) {
     const message = (error.response && error.response.data) || error.message;
