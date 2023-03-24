@@ -20,8 +20,12 @@ const Navbar = ({ title }) => (
   </>
 );
 
+Navbar.defaultProps = {
+  title: '',
+};
+
 Navbar.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default Navbar;
