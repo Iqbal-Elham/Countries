@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { getAllCountries, getRegion } from '../../redux/countriesSlice/countriesSlice';
 import './Country.scss';
 
@@ -27,6 +28,7 @@ const Country = () => {
           <Link to={`/${item.cioc}`} key={item.name.common} className="country__container">
             <img src={item.flags.png} alt={item.flags.alt} />
             <div className="country__content">
+              <BsArrowRightCircle className="country__arrow" />
               <h3>
                 Name:
                 {' '}

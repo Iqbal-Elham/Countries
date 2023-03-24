@@ -19,7 +19,16 @@
       flex-direction: column;
       font-family: 'Roboto Slab', serif;
       gap: 0.5rem;
+      position: relative;
       color: #ebebeb;
+
+    }
+    .country__arrow {
+      font-size: 22px;
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
   .country__container:nth-child(odd) {
