@@ -74,6 +74,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Live Video <a name="live-video"></a>
+
+[Link to Video](https://www.loom.com/share/8644dc18862b4eaeb30e4110269626c6)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
