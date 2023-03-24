@@ -4,22 +4,24 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCountry } from '../redux/countriesSlice/countriesSlice';
 
 const Details = () => {
+  const { countrySearch } = useSelector((store) => store.country);
   const dispatch = useDispatch();
   const { code } = useParams();
-  const { countrySearch } = useSelector((store) => store.country);
 
   useEffect(() => {
     if (code) {
       dispatch(getCountry(code.toLowerCase()));
     }
   }, [dispatch, code]);
-  console.log(countrySearch);
   return (
     <div>
       {countrySearch.length > 0 ? (
         <div>
           <div>
-            <img src={countrySearch[0].flags.png} alt={countrySearch[0].flags.alt} />
+            <img
+              src={countrySearch[0].flags.png}
+              alt={countrySearch[0].flags.alt}
+            />
             <h2>{countrySearch[0].name.common}</h2>
           </div>
           <div>
