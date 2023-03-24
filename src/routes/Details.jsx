@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCountry } from '../redux/countriesSlice/countriesSlice';
 import './Details.scss';
+import Navbar from '../components/Navbar/Navbar';
 
 const Details = () => {
   const { countrySearch } = useSelector((store) => store.country);
@@ -16,6 +17,7 @@ const Details = () => {
   }, [dispatch, code]);
   return (
     <div>
+      <Navbar title="Details" />
       {countrySearch.length > 0 ? (
         <div className="detail__container">
           <div className="detail__header">

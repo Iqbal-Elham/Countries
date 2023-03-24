@@ -25,7 +25,7 @@ const Filter = () => {
       <img src={worldMap} alt="World map" height="150" width="250" />
       <div>
         <select name="selected" ref={selectRef} onChange={setRefState} className="filter__select">
-          <option value="" disabled selected hidden>Select Region</option>
+          <option defaultValue="Select Region" hidden>Select Region</option>
           <option value="Asia">Asia</option>
           <option value="Oceania">Oceania </option>
           <option value="Europe"> Europe </option>

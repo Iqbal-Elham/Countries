@@ -1,10 +1,11 @@
 import React from 'react';
-/* eslint-disable */
 import Country from '../components/Country/Country';
 import Filter from '../components/Filter/Filter';
+import Navbar from '../components/Navbar/Navbar';
 
 const Homepage = () => (
   <>
+    <Navbar title="Countries" />
     <Filter />
     <Country />
   </>

@@ -16,7 +16,7 @@ const Country = () => {
   useEffect(() => {
     if (!countriesData.length) dispatch(getAllCountries());
     if (region) dispatch(getRegion(region));
-  }, [dispatch, success, region]);
+  }, [dispatch, countriesData.length, success, region]);
 
   return (
     <div className="country__list">

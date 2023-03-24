@@ -1,11 +1,11 @@
 .country__list {
-    color: var(--white-color);
-    
-    .country__container {
-        display: grid;
-        padding: 1rem;
-      background-color: var(--secondary-color);
-      grid-template-columns: 1fr 1.3fr;
+  color: var(--white-color);
+
+  .country__container {
+    display: grid;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    grid-template-columns: 1fr 1.3fr;
 
     img {
       height: 100px;
@@ -21,8 +21,8 @@
       gap: 0.5rem;
       position: relative;
       color: #ebebeb;
-
     }
+
     .country__arrow {
       font-size: 22px;
       display: flex;
@@ -31,6 +31,7 @@
       right: 0;
     }
   }
+
   .country__container:nth-child(odd) {
     background-color: var(--dark-secondary-color);
   }

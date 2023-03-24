@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500;900&display=swap');
+
 :root {
   --primary-color: #5687e5;
   --secondary-color: #3e68b4;
   --dark-secondary-color: #2c5aaf;
   --white-color: #ebebeb;
-  
 }
 
 * {
@@ -14,5 +14,3 @@
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
-
-
