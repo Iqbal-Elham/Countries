@@ -1,0 +1,28 @@
+.country__list {
+    color: var(--white-color);
+    
+    .country__container {
+        display: grid;
+        padding: 1rem;
+      background-color: var(--secondary-color);
+      grid-template-columns: 1fr 1.3fr;
+
+    img {
+      height: 100px;
+      width: 150px;
+      border-radius: 8px;
+    }
+
+    .country__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Roboto Slab', serif;
+      gap: 0.5rem;
+      color: #ebebeb;
+    }
+  }
+  .country__container:nth-child(odd) {
+    background-color: var(--dark-secondary-color);
+  }
+}
